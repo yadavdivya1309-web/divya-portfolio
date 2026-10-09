@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.7;
+    padding: 40px 20px;
+}
+
+body > h1,
+body > h2,
+body > p,
+body > h3 {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 42px;
+    margin-top: 50px !important;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-top: 35px !important;
+}
+
+h3 {
+    color: #e2e8f0;
+}
+
+p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 28px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}
+.navbar {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.navbar a {
+    color: #f1f5f9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+    scroll-margin-top: 25px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+}
+/* Center the entire portfolio content */
+body {
+    text-align: center;
+}
+
+/* Keep all main sections centered */
+body > h1,
+body > h2,
+body > h3,
+body > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center project cards */
+.projects {
+    max-width: 850px;
+    margin: 20px auto !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    text-align: left;
+}
+
+/* Keep card content readable */
+.project-card {
+    text-align: left;
+}
+
+/* Center navigation links */
+.navbar {
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
